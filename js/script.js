@@ -20,6 +20,9 @@
     if (email.value === "admin@gmail.com" && password.value === "admin") {
       redirect("dashboard.html");
       return true;
+    } else {
+      createError("Invalid Credentials");
+      return false;
     }
   }
 
